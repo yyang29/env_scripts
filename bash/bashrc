@@ -101,8 +101,7 @@ fi
 # disable XON/XOFF so that ctrl-s can do forward search
 stty -ixon
 
-# colored GCC warnings and errors
-export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'
+[ -f ~/.bash_env ] && source ~/.bash_env
 
 # start fish shell
 WHICH_FISH=`which fish`
