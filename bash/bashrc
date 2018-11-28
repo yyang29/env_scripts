@@ -1,7 +1,7 @@
 # alias
 alias ssh="ssh -Y"
 alias screen="screen -dRR"
-alias tmux="tmx2 -2 attach -d || tmx2 -2 new"
+alias tmux="tmux -2 attach -d || tmux -2 new"
 
 # some more ls aliases
 alias ll='ls -alF'
@@ -100,6 +100,9 @@ fi
 
 # disable XON/XOFF so that ctrl-s can do forward search
 stty -ixon
+
+# nvidia driver persistence mode
+#nvidia-smi -pm 1
 
 [ -f ~/.bash_env ] && source ~/.bash_env
 
