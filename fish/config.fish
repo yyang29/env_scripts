@@ -9,3 +9,6 @@ end
 alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
+
+# conda
+source (conda info --root)/etc/fish/conf.d/conda.fish
