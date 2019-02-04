@@ -35,24 +35,24 @@ function fish_prompt
     echo -n -s $error_color $fish $normal_color
   end
 
-  if git_is_repo
-    if test "$theme_short_path" = 'yes'
-      set root_folder (command git rev-parse --show-toplevel ^/dev/null)
-      set parent_root_folder (dirname $root_folder)
-      set cwd (echo $PWD | sed -e "s|$parent_root_folder/||")
-    end
+  #if git_is_repo
+  #  if test "$theme_short_path" = 'yes'
+  #    set root_folder (command git rev-parse --show-toplevel ^/dev/null)
+  #    set parent_root_folder (dirname $root_folder)
+  #    set cwd (echo $PWD | sed -e "s|$parent_root_folder/||")
+  #  end
 
-    echo -n -s " " $directory_color $cwd $normal_color
-    echo -n -s " on " $repository_color (git_branch_name) $normal_color " "
+  #  echo -n -s " " $directory_color $cwd $normal_color
+  #  echo -n -s " on " $repository_color (git_branch_name) $normal_color " "
 
-    if git_is_touched
-      echo -n -s $dirty
-    else
-      echo -n -s (git_ahead $ahead $behind $diverged $none)
-    end
-  else
+  #  if git_is_touched
+  #    echo -n -s $dirty
+  #  else
+  #    echo -n -s (git_ahead $ahead $behind $diverged $none)
+  #  end
+  #else
     echo -n -s " " $directory_color $cwd $normal_color
-  end
+  #end
 
   echo -n -s " "
 end
