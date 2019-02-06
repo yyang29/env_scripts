@@ -1,7 +1,7 @@
 # alias
 alias ssh="ssh -Y"
 alias screen="screen -dRR"
-alias tmux="tmux -2 attach -d || tmux -2 new"
+alias tmux="tmux -2"
 
 # some more ls aliases
 alias ll='ls -alF'
