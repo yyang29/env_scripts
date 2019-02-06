@@ -1,9 +1,7 @@
 # app alias
 alias ssh='ssh -Y'
 alias screen='screen -dRR'
-function tmux 
-  command tmux -2 attach -d; or command tmux -2 new
-end
+alias tmux='tmx2 -2' 
 
 # some ls aliases
 alias ll='ls -alF'
