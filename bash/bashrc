@@ -97,7 +97,7 @@ if ! shopt -oq posix; then
 fi
 
 # disable XON/XOFF so that ctrl-s can do forward search
-stty -ixon
+[[ $- == *i* ]] && stty -ixon
 
 # nvidia driver persistence mode
 #nvidia-smi -pm 1
