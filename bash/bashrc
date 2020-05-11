@@ -102,6 +102,10 @@ fi
 # nvidia driver persistence mode
 #nvidia-smi -pm 1
 
+export INTELFPGAOCLSDKROOT="/home/yang/tools/intelFPGA_pro/19.3/hld"
+
+export QSYS_ROOTDIR="/home/yang/tools/intelFPGA_pro/19.3/qsys/bin"
+
 [ -f ~/.bash_env ] && source ~/.bash_env
 
 # start fish shell
