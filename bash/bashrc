@@ -1,3 +1,8 @@
+# prompt var is not set, so this is *not* an interactive shell
+if [ -z "$PS1" ]; then
+  return
+fi
+
 # alias
 alias ssh="ssh -Y"
 
